@@ -1,0 +1,144 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #6A0DAD;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    flex: 1;
+    padding: 2em;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.category {
+    margin-bottom: 2em;
+}
+
+.category h3 {
+    margin: 0 0 1em 1em;
+    color: #6A0DAD;
+}
+
+.product-list {
+    display: flex;
+    overflow-x: scroll;
+    padding: 0 1em;
+}
+
+.product {
+    flex: 0 0 auto;
+    border-radius: 15px; /* Zaoblení okrajů boxu */
+    margin: 0 1em;
+    padding: 1em;
+    text-align: center;
+    width: 200px; /* Nastavíme šířku boxu produktu */
+    box-sizing: border-box;
+    background-color: #fff; /* Bílé pozadí boxu */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Jemný stín pro lepší vzhled */
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px; /* Zaoblení okrajů obrázku */
+}
+
+.product h3 {
+    margin: 0.5em 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.product p {
+    font-size: 1em;
+    color: #666;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+/* Košík */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button {
+    background-color: #6A0DAD;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #550a9f;
+}
